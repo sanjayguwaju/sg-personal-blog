@@ -1,3 +1,5 @@
+import Banner from "../../components/Banner";
+import Header from "../../components/Header";
 import "../../styles/globals.css";
 
 export const metadata = {
@@ -12,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header/>
+        <Banner/>
+        {children}
+      </body>
     </html>
   )
 }
